@@ -21,7 +21,7 @@ class HomeViewModel: ObservableObject {
         setupTalksGrid()
     }
     
-    func didSelectTalk(_ talk: Talk) {
+    func didSelectTalk(_ talk: String) {
         
     }
     

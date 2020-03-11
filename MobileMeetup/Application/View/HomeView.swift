@@ -23,9 +23,9 @@ struct HomeView: View {
         }
     }
     
-    var categories: some View {
-        VStack(alignment: .leading) {
-            Text("Suggestions")
+    var talksView: some View {
+        VStack(alignment: .center) {
+            Text("Talks")
             .fontWeight(.bold)
             .font(.system(size: 22))
             .padding(7)
@@ -35,18 +35,18 @@ struct HomeView: View {
                         Button(action: {
                             self.viewModel.didSelectTalk(talk)
                         }, label: {
-                        Text(talk.uppercased())
+                        Text(talk)
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
+                            .foregroundColor(.backgroundGreen)
                             .padding(5)
-                            .background(Color("Category"))
+                            .background(Color.white)
                         })
                         .cornerRadius(5)
                         .padding(3)
                     }
-                }.padding(.leading, 20)
+                }.padding(.top, 20)
             }
-        }.frame(minWidth: 50, maxWidth: .infinity, alignment: .topLeading)
+        }.frame(minWidth: 50, maxWidth: .infinity, alignment: .top)
     }
     
     var buttons: some View {
@@ -128,7 +128,7 @@ struct HomeView: View {
 #if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: HomeViewModel(talks: ["Test 1", "Test 2", "Test 3", "Test 4", "Test 5", "Test 6"]))
+        HomeView(viewModel: HomeViewModel(talks: ["Testes Automatizados", "Testes Unitários", "Android Developer", "Koin", "iOS Development", "Threads"]))
     }
 }
 #endif
