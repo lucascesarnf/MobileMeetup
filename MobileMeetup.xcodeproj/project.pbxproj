@@ -177,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA9FE304241864610046CD1A /* Build configuration list for PBXNativeTarget "MobileMeetup" */;
 			buildPhases = (
+				3962C9AA241AA836001A766F /* Lint */,
 				CA9FE2E12418645F0046CD1A /* Sources */,
 				CA9FE2E22418645F0046CD1A /* Frameworks */,
 				CA9FE2E32418645F0046CD1A /* Resources */,
@@ -265,6 +266,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3962C9AA241AA836001A766F /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA9FE2E12418645F0046CD1A /* Sources */ = {

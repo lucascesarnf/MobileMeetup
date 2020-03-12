@@ -9,39 +9,32 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
-    
+    @Published var lastTalks: [String] = []
     var talksGrid: [[String]] = [[]]
     private var talks: [String]
     private let numberOfTalks = 8
     private let talksColumnsNumer = 3
     private let limitOfTalks = 8
-    
+
     init(talks: [String]) {
         self.talks = talks
         setupTalksGrid()
     }
-    
+
     func didSelectTalk(_ talk: String) {
-        
+        if lastTalks.count < limitOfTalks {
+            lastTalks.append(talk)
+        }
     }
-    
-    func businessLogic() {
-        // When my talks reaches 4, the first one needs to be deleted and the last one added last.
-        
+
+    func clearLastTalks() {
+        lastTalks = []
     }
-    
-    func computeSomething() {
-        
-    }
-    
-    func doSomething() {
-        
-    }
-    
+
     private func setupTalksGrid() {
         var grid = [[String]]()
         var count = 0
-        
+
         for line in 0 ..< talksColumnsNumer {
             var array = [String]()
             for column in 0 ..< talksColumnsNumer {
@@ -55,7 +48,7 @@ class HomeViewModel: ObservableObject {
                 grid.append(array)
             }
         }
-        
+
         talksGrid = grid
     }
 }

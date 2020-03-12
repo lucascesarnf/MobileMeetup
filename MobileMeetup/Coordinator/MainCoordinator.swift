@@ -15,15 +15,15 @@ class MainCoordinator: Coordinator {
     var homeViewController: UIViewController?
     var homeViewModel: HomeViewModel?
     var talks = ["Testes Automatizados", "Testes Unitários", "Android Developer", "Koin", "iOS Development", "Threads"]
-    
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     func start() {
         navigationController.pushViewController(setupHomeView(), animated: false)
     }
-    
+
     func setupHomeView() -> UIViewController {
         let viewModel = HomeViewModel(talks: talks)
         let view = HomeView(viewModel: viewModel)
@@ -33,4 +33,3 @@ class MainCoordinator: Coordinator {
         return viewController
     }
 }
-
