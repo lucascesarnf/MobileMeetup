@@ -12,26 +12,44 @@ class HomeViewModel: ObservableObject {
     @Published var lastTalks: [String] = []
     var talksGrid: [[String]] = [[]]
     private var talks: [String]
-    private let numberOfTalks = 8
     private let talksColumnsNumer = 3
-    private let limitOfTalks = 8
+    private let limitOfTalks = 6
 
     init(talks: [String]) {
         self.talks = talks
         setupTalksGrid()
     }
 
-    func didSelectTalk(_ talk: String) {
-        if lastTalks.count < limitOfTalks {
-            lastTalks.append(talk)
-        }
-    }
-
     func clearLastTalks() {
         lastTalks = []
     }
 
-    private func setupTalksGrid() {
+    func didSelectTalk(_ talk: String) {
+        if lastTalks.contains(talk) {
+            updateTalk(talk)
+        } else {
+            if lastTalks.count < limitOfTalks {
+                lastTalks.append(talk)
+            } else {
+               deleteLastAndSaveNew(talk)
+            }
+        }
+    }
+}
+
+private extension HomeViewModel {
+    func deleteLastAndSaveNew(_ talk: String) {
+        lastTalks.removeFirst()
+        lastTalks.append(talk)
+    }
+
+    func updateTalk(_ talk: String) {
+        guard let index = lastTalks.firstIndex(of: talk) else { return }
+        lastTalks.remove(at: index)
+        lastTalks.append(talk)
+    }
+
+    func setupTalksGrid() {
         var grid = [[String]]()
         var count = 0
 
@@ -48,7 +66,6 @@ class HomeViewModel: ObservableObject {
                 grid.append(array)
             }
         }
-
         talksGrid = grid
     }
 }

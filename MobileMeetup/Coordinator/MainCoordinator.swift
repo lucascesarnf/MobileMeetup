@@ -14,7 +14,11 @@ class MainCoordinator: Coordinator {
     var navigationController: UINavigationController
     var homeViewController: UIViewController?
     var homeViewModel: HomeViewModel?
-    var talks = ["Testes Automatizados", "Testes Unitários", "Android Developer", "Koin", "iOS Development", "Threads"]
+    var talks = ["Testes Automatizados", "Testes Unitários",
+                 "Android Developer", "Koin",
+                 "iOS Development", "Threads",
+                 "Apple", "Google",
+                 "Cocoa"]
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

@@ -25,6 +25,8 @@ struct HomeView: View {
             }
         }.background(Color.backgroundGreen
             .edgesIgnoringSafeArea(.all))
+            .navigationBarTitle("", displayMode: .inline)
+            .navigationBarHidden(true)
     }
 
     var lastTalksView: some View {
@@ -46,7 +48,7 @@ struct HomeView: View {
                 })
             }
 
-            ForEach(viewModel.lastTalks, id: \.self) { talk in
+            ForEach(viewModel.lastTalks.reversed(), id: \.self) { talk in
                 Text(talk)
                     .fontWeight(.bold)
                     .foregroundColor(.backgroundGreen)
@@ -88,7 +90,7 @@ struct HomeView: View {
     var logoImage: some View {
         Image("logo")
             .resizable()
-            .frame(width: 280.0, height: 280.0)
+            .frame(width: 200.0, height: 200.0)
     }
 }
 
@@ -100,7 +102,10 @@ struct HomeViewPreviews: PreviewProvider {
                                                   "Android Developer",
                                                   "Koin",
                                                   "iOS Development",
-                                                  "Threads"]))
+                                                  "Threads",
+                                                  "Apple",
+                                                  "Google",
+                                                  "Cocoa"]))
     }
 }
 #endif
