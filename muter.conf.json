@@ -1,0 +1,20 @@
+{
+  "arguments" : [
+    "-project",
+    "MobileMeetup.xcodeproj",
+    "-scheme",
+    "MobileMeetup",
+    "-destination",
+    "platform=iOS Simulator,name=iPhone 8",
+    "test"
+  ],
+  "exclude" : [
+             "AppDelegate.swift",
+             "SceneDelegate.swift",
+             "MainCoordinator",
+             "Color+Utils.swift",
+             "Coordinator.swift",
+             "HomeView.swift",
+  ],
+  "executable" : "\/usr\/bin\/xcodebuild"
+}

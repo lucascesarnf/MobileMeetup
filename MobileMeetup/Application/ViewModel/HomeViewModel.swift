@@ -13,10 +13,11 @@ class HomeViewModel: ObservableObject {
     var talksGrid: [[String]] = [[]]
     private var talks: [String]
     private let talksColumnsNumer = 3
-    private let limitOfTalks = 6
+    private let limitOfTalks: Int
 
-    init(talks: [String]) {
+    init(talks: [String], limitOfTalks: Int) {
         self.talks = talks
+        self.limitOfTalks = limitOfTalks
         setupTalksGrid()
     }
 
@@ -28,25 +29,30 @@ class HomeViewModel: ObservableObject {
         if lastTalks.contains(talk) {
             updateTalk(talk)
         } else {
-            if lastTalks.count < limitOfTalks {
-                lastTalks.append(talk)
-            } else {
-               deleteLastAndSaveNew(talk)
-            }
+            insertTalk(talk)
         }
     }
 }
 
 private extension HomeViewModel {
-    func deleteLastAndSaveNew(_ talk: String) {
-        lastTalks.removeFirst()
-        lastTalks.append(talk)
+    func updateTalk(_ talk: String) {
+        if let index = lastTalks.firstIndex(of: talk) {
+            lastTalks.remove(at: index)
+            lastTalks.append(talk)
+        }
     }
 
-    func updateTalk(_ talk: String) {
-        guard let index = lastTalks.firstIndex(of: talk) else { return }
-        lastTalks.remove(at: index)
-        lastTalks.append(talk)
+    func insertTalk(_ talk: String) {
+        if lastTalks.count == limitOfTalks {
+            deleteLastAndSaveNew(talk)
+        } else {
+            lastTalks.append(talk)
+        }
+    }
+
+    func deleteLastAndSaveNew(_ talk: String) {
+           lastTalks.removeFirst()
+           lastTalks.append(talk)
     }
 
     func setupTalksGrid() {
@@ -62,6 +68,7 @@ private extension HomeViewModel {
                 }
                 count += 1
             }
+            /// Verificação inútil:
             if array.count > 0 {
                 grid.append(array)
             }

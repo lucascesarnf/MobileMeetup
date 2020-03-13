@@ -12,13 +12,23 @@
 		CA9FE2EF241864610046CD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2EE241864610046CD1A /* Assets.xcassets */; };
 		CA9FE2F2241864610046CD1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2F1241864610046CD1A /* Preview Assets.xcassets */; };
 		CA9FE2F5241864610046CD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2F3241864610046CD1A /* LaunchScreen.storyboard */; };
-		CA9FE300241864610046CD1A /* MobileMeetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE2FF241864610046CD1A /* MobileMeetupTests.swift */; };
 		CA9FE30D241864EF0046CD1A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE30C241864EF0046CD1A /* Coordinator.swift */; };
 		CA9FE30F241865320046CD1A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE30E241865320046CD1A /* MainCoordinator.swift */; };
 		CA9FE312241868CE0046CD1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE311241868CE0046CD1A /* HomeView.swift */; };
 		CA9FE316241869DC0046CD1A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE315241869DC0046CD1A /* HomeViewModel.swift */; };
 		CA9FE31924186D9D0046CD1A /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE31824186D9D0046CD1A /* Color+Utils.swift */; };
-		CAE9BDD8241876B40028EA7C /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9BDD7241876B40028EA7C /* Talk.swift */; };
+		CAE9BDDD241B03A00028EA7C /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9BDDC241B03A00028EA7C /* HomeViewModelTest.swift */; };
+		CAE9BDF5241B09630028EA7C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE30C241864EF0046CD1A /* Coordinator.swift */; };
+		CAE9BDF6241B09630028EA7C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE315241869DC0046CD1A /* HomeViewModel.swift */; };
+		CAE9BDF7241B09630028EA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE2E82418645F0046CD1A /* AppDelegate.swift */; };
+		CAE9BDF8241B09630028EA7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE2EA2418645F0046CD1A /* SceneDelegate.swift */; };
+		CAE9BDF9241B09630028EA7C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE311241868CE0046CD1A /* HomeView.swift */; };
+		CAE9BDFA241B09630028EA7C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE30E241865320046CD1A /* MainCoordinator.swift */; };
+		CAE9BDFB241B09630028EA7C /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE31824186D9D0046CD1A /* Color+Utils.swift */; };
+		CAE9BDFE241B09630028EA7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2F3241864610046CD1A /* LaunchScreen.storyboard */; };
+		CAE9BDFF241B09630028EA7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2F1241864610046CD1A /* Preview Assets.xcassets */; };
+		CAE9BE00241B09630028EA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2EE241864610046CD1A /* Assets.xcassets */; };
+		CAE9BE08241B0F450028EA7C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAE9BE07241B0F450028EA7C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +50,16 @@
 		CA9FE2F4241864610046CD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA9FE2F6241864610046CD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9FE2FB241864610046CD1A /* MobileMeetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileMeetupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA9FE2FF241864610046CD1A /* MobileMeetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileMeetupTests.swift; sourceTree = "<group>"; };
 		CA9FE301241864610046CD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9FE30C241864EF0046CD1A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CA9FE30E241865320046CD1A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		CA9FE311241868CE0046CD1A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CA9FE315241869DC0046CD1A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CA9FE31824186D9D0046CD1A /* Color+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
-		CAE9BDD7241876B40028EA7C /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		CAE9BDDC241B03A00028EA7C /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		CAE9BE04241B09630028EA7C /* Mutation Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mutation Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE9BE05241B09630028EA7C /* Mutation Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mutation Test-Info.plist"; path = "/Users/lucascesarnogueirafonseca/Documents/MobileMeetup/Mutation Test-Info.plist"; sourceTree = "<absolute>"; };
+		CAE9BE07241B0F450028EA7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +77,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAE9BDFC241B09630028EA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		CA9FE2DC2418645F0046CD1A = {
 			isa = PBXGroup;
 			children = (
+				CAE9BE07241B0F450028EA7C /* Default-568h@2x.png */,
 				CA9FE2E72418645F0046CD1A /* MobileMeetup */,
 				CA9FE2FE241864610046CD1A /* MobileMeetupTests */,
 				CA9FE2E62418645F0046CD1A /* Products */,
+				CAE9BE05241B09630028EA7C /* Mutation Test-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +103,7 @@
 			children = (
 				CA9FE2E52418645F0046CD1A /* MobileMeetup.app */,
 				CA9FE2FB241864610046CD1A /* MobileMeetupTests.xctest */,
+				CAE9BE04241B09630028EA7C /* Mutation Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +123,8 @@
 		CA9FE2FE241864610046CD1A /* MobileMeetupTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA9FE2FF241864610046CD1A /* MobileMeetupTests.swift */,
 				CA9FE301241864610046CD1A /* Info.plist */,
+				CAE9BDDC241B03A00028EA7C /* HomeViewModelTest.swift */,
 			);
 			path = MobileMeetupTests;
 			sourceTree = "<group>";
@@ -131,7 +153,6 @@
 		CA9FE310241868AA0046CD1A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				CAE9BDD6241876A30028EA7C /* Model */,
 				CA9FE314241869C90046CD1A /* ViewModel */,
 				CA9FE313241869C40046CD1A /* View */,
 			);
@@ -160,14 +181,6 @@
 				CA9FE31824186D9D0046CD1A /* Color+Utils.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		CAE9BDD6241876A30028EA7C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CAE9BDD7241876B40028EA7C /* Talk.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +222,24 @@
 			productReference = CA9FE2FB241864610046CD1A /* MobileMeetupTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CAE9BDF2241B09630028EA7C /* Mutation Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE9BE01241B09630028EA7C /* Build configuration list for PBXNativeTarget "Mutation Test" */;
+			buildPhases = (
+				CAE9BE06241B098F0028EA7C /* Muter */,
+				CAE9BDF4241B09630028EA7C /* Sources */,
+				CAE9BDFC241B09630028EA7C /* Frameworks */,
+				CAE9BDFD241B09630028EA7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mutation Test";
+			productName = MobileMeetup;
+			productReference = CAE9BE04241B09630028EA7C /* Mutation Test.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +255,7 @@
 					};
 					CA9FE2FA241864610046CD1A = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = CA9FE2E42418645F0046CD1A;
 					};
 				};
@@ -242,6 +274,7 @@
 			projectRoot = "";
 			targets = (
 				CA9FE2E42418645F0046CD1A /* MobileMeetup */,
+				CAE9BDF2241B09630028EA7C /* Mutation Test */,
 				CA9FE2FA241864610046CD1A /* MobileMeetupTests */,
 			);
 		};
@@ -262,6 +295,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE9BDFD241B09630028EA7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE9BDFE241B09630028EA7C /* LaunchScreen.storyboard in Resources */,
+				CAE9BE08241B0F450028EA7C /* Default-568h@2x.png in Resources */,
+				CAE9BDFF241B09630028EA7C /* Preview Assets.xcassets in Resources */,
+				CAE9BE00241B09630028EA7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +330,24 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		CAE9BE06241B098F0028EA7C /* Muter */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Muter;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "muter --output-xcode\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,7 +356,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA9FE30D241864EF0046CD1A /* Coordinator.swift in Sources */,
-				CAE9BDD8241876B40028EA7C /* Talk.swift in Sources */,
 				CA9FE316241869DC0046CD1A /* HomeViewModel.swift in Sources */,
 				CA9FE2E92418645F0046CD1A /* AppDelegate.swift in Sources */,
 				CA9FE2EB2418645F0046CD1A /* SceneDelegate.swift in Sources */,
@@ -308,7 +369,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9FE300241864610046CD1A /* MobileMeetupTests.swift in Sources */,
+				CAE9BDDD241B03A00028EA7C /* HomeViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE9BDF4241B09630028EA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE9BDF5241B09630028EA7C /* Coordinator.swift in Sources */,
+				CAE9BDF6241B09630028EA7C /* HomeViewModel.swift in Sources */,
+				CAE9BDF7241B09630028EA7C /* AppDelegate.swift in Sources */,
+				CAE9BDF8241B09630028EA7C /* SceneDelegate.swift in Sources */,
+				CAE9BDF9241B09630028EA7C /* HomeView.swift in Sources */,
+				CAE9BDFA241B09630028EA7C /* MainCoordinator.swift in Sources */,
+				CAE9BDFB241B09630028EA7C /* Color+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +568,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EU52X4J36U;
 				INFOPLIST_FILE = MobileMeetupTests/Info.plist;
@@ -504,6 +580,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lucas.MobileMeetupTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileMeetup.app/MobileMeetup";
@@ -515,6 +593,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EU52X4J36U;
 				INFOPLIST_FILE = MobileMeetupTests/Info.plist;
@@ -526,9 +605,50 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lucas.MobileMeetupTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileMeetup.app/MobileMeetup";
+			};
+			name = Release;
+		};
+		CAE9BE02241B09630028EA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MobileMeetup/Source\"";
+				DEVELOPMENT_TEAM = EU52X4J36U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Mutation Test-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.MobileMeetup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE9BE03241B09630028EA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MobileMeetup/Source\"";
+				DEVELOPMENT_TEAM = EU52X4J36U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Mutation Test-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucas.MobileMeetup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -558,6 +678,15 @@
 			buildConfigurations = (
 				CA9FE308241864610046CD1A /* Debug */,
 				CA9FE309241864610046CD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE9BE01241B09630028EA7C /* Build configuration list for PBXNativeTarget "Mutation Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE9BE02241B09630028EA7C /* Debug */,
+				CAE9BE03241B09630028EA7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

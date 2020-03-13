@@ -29,7 +29,7 @@ class MainCoordinator: Coordinator {
     }
 
     func setupHomeView() -> UIViewController {
-        let viewModel = HomeViewModel(talks: talks)
+        let viewModel = HomeViewModel(talks: talks, limitOfTalks: 4)
         let view = HomeView(viewModel: viewModel)
         let viewController = UIHostingController(rootView: view)
         homeViewModel = viewModel

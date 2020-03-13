@@ -105,7 +105,7 @@ struct HomeViewPreviews: PreviewProvider {
                                                   "Threads",
                                                   "Apple",
                                                   "Google",
-                                                  "Cocoa"]))
+                                                  "Cocoa"], limitOfTalks: 4))
     }
 }
 #endif
