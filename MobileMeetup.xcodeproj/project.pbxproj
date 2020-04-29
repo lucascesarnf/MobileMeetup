@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39EBFEC82458A84F00B70622 /* Mutation Test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39EBFEC72458A84F00B70622 /* Mutation Test-Info.plist */; };
 		CA9FE2E92418645F0046CD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE2E82418645F0046CD1A /* AppDelegate.swift */; };
 		CA9FE2EB2418645F0046CD1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FE2EA2418645F0046CD1A /* SceneDelegate.swift */; };
 		CA9FE2EF241864610046CD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9FE2EE241864610046CD1A /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39EBFEC72458A84F00B70622 /* Mutation Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Mutation Test-Info.plist"; sourceTree = "<group>"; };
 		CA9FE2E52418645F0046CD1A /* MobileMeetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileMeetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9FE2E82418645F0046CD1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA9FE2EA2418645F0046CD1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 		CA9FE31824186D9D0046CD1A /* Color+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
 		CAE9BDDC241B03A00028EA7C /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		CAE9BE04241B09630028EA7C /* Mutation Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mutation Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CAE9BE05241B09630028EA7C /* Mutation Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Mutation Test-Info.plist"; path = "/Users/lucascesarnogueirafonseca/Documents/MobileMeetup/Mutation Test-Info.plist"; sourceTree = "<absolute>"; };
 		CAE9BE07241B0F450028EA7C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +95,6 @@
 				CA9FE2E72418645F0046CD1A /* MobileMeetup */,
 				CA9FE2FE241864610046CD1A /* MobileMeetupTests */,
 				CA9FE2E62418645F0046CD1A /* Products */,
-				CAE9BE05241B09630028EA7C /* Mutation Test-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +123,7 @@
 		CA9FE2FE241864610046CD1A /* MobileMeetupTests */ = {
 			isa = PBXGroup;
 			children = (
+				39EBFEC72458A84F00B70622 /* Mutation Test-Info.plist */,
 				CA9FE301241864610046CD1A /* Info.plist */,
 				CAE9BDDC241B03A00028EA7C /* HomeViewModelTest.swift */,
 			);
@@ -295,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EBFEC82458A84F00B70622 /* Mutation Test-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# if which swiftlint >/dev/null; then\n#  swiftlint\n# else\n#  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
 		};
 		CAE9BE06241B098F0028EA7C /* Muter */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -620,7 +622,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MobileMeetup/Source\"";
 				DEVELOPMENT_TEAM = EU52X4J36U;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Mutation Test-Info.plist";
+				INFOPLIST_FILE = "MobileMeetupTests/Mutation Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,7 +642,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MobileMeetup/Source\"";
 				DEVELOPMENT_TEAM = EU52X4J36U;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Mutation Test-Info.plist";
+				INFOPLIST_FILE = "MobileMeetupTests/Mutation Test-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

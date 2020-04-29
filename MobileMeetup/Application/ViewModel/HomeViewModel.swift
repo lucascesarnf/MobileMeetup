@@ -43,7 +43,7 @@ private extension HomeViewModel {
     }
 
     func insertTalk(_ talk: String) {
-        if lastTalks.count == limitOfTalks {
+        if lastTalks.count == limitOfTalks { //Mutante aqui
             deleteLastAndSaveNew(talk)
         } else {
             lastTalks.append(talk)
@@ -51,8 +51,8 @@ private extension HomeViewModel {
     }
 
     func deleteLastAndSaveNew(_ talk: String) {
-           lastTalks.removeFirst()
-           lastTalks.append(talk)
+           lastTalks.removeFirst() //Mutante aqui
+           lastTalks.append(talk) //Mutante aqui
     }
 
     func setupTalksGrid() {
@@ -68,8 +68,9 @@ private extension HomeViewModel {
                 }
                 count += 1
             }
+
             /// Verificação inútil:
-            if array.count > 0 {
+            if array.count > 0 { //Mutante aqui
                 grid.append(array)
             }
         }
